@@ -1,0 +1,36 @@
+@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Chairs</title>
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var chair in Model)
+            {
+                <tr>
+                    <td>@chair.Name</td>
+                    <td>@chair.Price</td>
+                    <td>@chair.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>  
+</div>
+</body>
+</html>
