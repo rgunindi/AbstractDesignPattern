@@ -7,22 +7,23 @@ namespace FurnitureApp.Repository;
 
 public class GenericRepository<T>: IGenericRepositoryAsync<T> where T: BaseEntity
 {
-    private readonly FakeDbContext _context = new();
+    private readonly FakeDbContext _context;
+    public GenericRepository(FakeDbContext context)
+    {
+        _context = context;
+    }
     public async Task<List<T>> GetAllAsync()
     {
-        var all=await _context.Chairs.ToListAsync();
-        return all.OfType<T>() as List<T>;
+        return await _context.Set<T>().ToListAsync();
     }
 
     public async Task<T> GetByIdAsync(Guid id)
     {
-        var p= await _context.Chairs.FindAsync(id);
-        return p as T;
+            return await _context.Set<T>().FindAsync(id) ?? throw new Exception("Entity not found");
     }
-
     public async Task<T> AddAsync(T entity)
     {
-        _context.Chairs.Add(entity as Chair);
+        await _context.AddAsync(entity);
         await _context.SaveChangesAsync();
         return entity;
     }

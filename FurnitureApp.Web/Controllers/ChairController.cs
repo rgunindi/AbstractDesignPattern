@@ -7,25 +7,34 @@ namespace FurnitureApp.Web.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ChairController : Controller
+public class ChairController : ControllerBase
 {
-    public required IChairRepository ChairRepository;
+    private readonly IChairRepository _chairRepository;
 
     public ChairController(IChairRepository chairRepository)
     {
-        ChairRepository = chairRepository;
+        _chairRepository = chairRepository;
     }
 
     // GET: api/chair
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        List<Chair> chairs = await ChairRepository.GetAllAsync();
-        Console.WriteLine(chairs.Count+" chairs found");
-        // var chairModelList = chairs.Select(c => new ChairViewModel(c)
-        // {
-        //     Name = c.Name ?? "",
-        // }).ToList();
-        return Ok(chairs);
+        var chairs = await _chairRepository.GetAllAsync();
+        Console.WriteLine(chairs.Count + " chairs found");
+        var chairModelList = chairs.Select(c => new ChairViewModel(c)
+        {
+            Name = c.Name ?? "",
+            Price = c.Price,
+            Description = c.Description
+        }).ToList();
+        return Ok(chairModelList);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Post([FromBody] Chair chair)
+    {
+        var newChair = await _chairRepository.AddAsync(chair);
+        return Ok(newChair);
     }
 }
