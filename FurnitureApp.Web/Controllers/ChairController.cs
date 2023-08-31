@@ -22,12 +22,7 @@ public class ChairController : ControllerBase
     {
         var chairs = await _chairRepository.GetAllAsync();
         Console.WriteLine(chairs.Count + " chairs found");
-        var chairModelList = chairs.Select(c => new ChairViewModel(c)
-        {
-            Name = c.Name ?? "",
-            Price = c.Price,
-            Description = c.Description
-        }).ToList();
+        var chairModelList = chairs.Select(c => new ChairViewModel(c)).ToList();
         return Ok(chairModelList);
     }
 

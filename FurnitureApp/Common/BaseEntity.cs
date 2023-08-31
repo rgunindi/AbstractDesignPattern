@@ -1,3 +1,5 @@
+using FurnitureApp.Models;
+
 namespace FurnitureApp.Common;
 
 public class BaseEntity
@@ -8,4 +10,5 @@ public class BaseEntity
     public DateTime? UpdateDate { get; set; }
     public decimal Price { get; set; }
     public string Description { get; set; } = null!;
+    public required modelType ModelType { get; set; }
 }

@@ -1,6 +1,7 @@
 using FurnitureApp.Common;
 using FurnitureApp.Context;
 using FurnitureApp.Entities;
+using FurnitureApp.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace FurnitureApp.Repository;
