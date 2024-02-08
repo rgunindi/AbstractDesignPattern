@@ -1,0 +1,157 @@
+repo_name: rgunindi/AbstractDesignPattern
+report_id: c9dcd86425c30172d33925e761920519
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-08T19:47:04+00:00'
+requested_by: rgunindi
+provider: github
+branch: master
+detected_tools_count: 11
+tools:
+- name: C#
+  description: Simple, general-purpose, object-oriented programming language for the
+    .NET platform
+  website_url: http://csharp.net
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern
+  detection_source: Repo Metadata
+- name: ".NET"
+  description: A free, cross-platform, open source developer platform for building
+    many different types of applications
+  website_url: http://www.microsoft.com/net/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp/FurnitureApp.csproj
+  detection_source: FurnitureApp/FurnitureApp.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: ".NET Core"
+  description: An Open Source, General-Purpose Development Platform Maintained by
+    Microsoft and the .NET Community
+  website_url: https://docs.microsoft.com/en-us/dotnet/core/
+  version: '7.0'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/6403/default_91fc1f0ee315262794273aa1387eaf8fed8436e6.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp.Web/FurnitureApp.Web.csproj
+  detection_source: FurnitureApp.Web/FurnitureApp.Web.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: ASP.NET Core
+  description: A cross-platform .NET framework for building modern cloud-based web
+    applications on Windows, Mac, or Linux
+  website_url: docs.microsoft.com/en-us/aspnet/core/
+  version: '7.0'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/11331/asp.net-core.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp.Web/FurnitureApp.Web.csproj
+  detection_source: FurnitureApp.Web/FurnitureApp.Web.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern
+  detection_source: Repo Metadata
+- name: NuGet
+  description: The package manager for .NET
+  website_url: https://www.nuget.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp/FurnitureApp.csproj
+  detection_source: FurnitureApp/FurnitureApp.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: Visual Studio
+  description: State-of-the-art tools and services that you can use to create great
+    apps for devices, the cloud, and everything in between.
+  website_url: http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Integrated Development Environment
+  image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/AbstractDesignPattern.sln
+  detection_source: AbstractDesignPattern.sln
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: Microsoft.EntityFrameworkCore
+  description: Entity Framework Core is a lightweight and extensible version of the
+    popular Entity Framework data access technology
+  package_url: https://www.nuget.org/Microsoft.EntityFrameworkCore
+  version: 7.0.10
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12852/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp/FurnitureApp.csproj
+  detection_source: FurnitureApp/FurnitureApp.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: Microsoft.EntityFrameworkCore.InMemory
+  description: In-memory database provider for Entity Framework Core
+  package_url: https://www.nuget.org/Microsoft.EntityFrameworkCore.InMemory
+  version: 7.0.10
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13150/default_81ac985912284073db895b0d26abf3657532a164.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp/FurnitureApp.csproj
+  detection_source: FurnitureApp/FurnitureApp.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: Microsoft.Extensions.DependencyInjection
+  description: Default implementation of dependency injection for Microsoft.Extensions.DependencyInjection
+  package_url: https://www.nuget.org/Microsoft.Extensions.DependencyInjection
+  version: 8.0.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12846/default_0f5233770e71818507f2339042e7e61bef904e70.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp/FurnitureApp.csproj
+  detection_source: FurnitureApp/FurnitureApp.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
+- name: Swashbuckle.AspNetCore
+  description: Swagger tools for documenting APIs built on ASP.NET Core
+  package_url: https://www.nuget.org/Swashbuckle.AspNetCore
+  version: 6.4.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12981/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: https://github.com/rgunindi/AbstractDesignPattern/blob/master/FurnitureApp.Web/FurnitureApp.Web.csproj
+  detection_source: FurnitureApp.Web/FurnitureApp.Web.csproj
+  last_updated_by: Ramazan
+  last_updated_on: 2023-08-30 12:33:20.000000000 Z
